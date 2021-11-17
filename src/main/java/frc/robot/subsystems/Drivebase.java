@@ -31,6 +31,6 @@ public class Drivebase extends SubsystemBase {
     // This method will be called once per scheduler run
     double boost = RobotContainer.stick.getRawButton(2) ? 0.8 : 0.4;
 
-    drive(RobotContainer.stick.getRawAxis(1) * boost, RobotContainer.stick.getRawAxis(3) * boost);
+    drive(RobotContainer.stick.getRawAxis(1) + boost, RobotContainer.stick.getRawAxis(3) + boost);
   }
 }
